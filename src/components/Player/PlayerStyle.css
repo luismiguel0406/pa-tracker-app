@@ -1,5 +1,4 @@
-// Estilos CSS Integrados Responsivos
-const playerStyleCSS = `
+
   .profile-card {
     border-top: 3px solid #f2ca50 !important;
     max-width: 600px;
@@ -166,11 +165,9 @@ const playerStyleCSS = `
     text-decoration: none;
     transition: background 0.2s, color 0.2s;
   }
-   .challenge-button:hover {
-      background-color: #f2ca50;
-      color: #110e07;
-      border-color: #f2ca50;
-    }  
-`;
-
-export default playerStyleCSS;
+  
+  .challenge-button:hover {
+    background-color: #f2ca50;
+    color: #110e07;
+    border-color: #f2ca50;
+  }  

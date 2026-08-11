@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { axiosClient } from '../../api/axiosClient';
-import challengesStyleCSS from './ChallengesStyle.js';
-import challengesModalCSS from './ChallengesModalStyle.js';
-
+import './ChallengesStyle.css';
+import './ChallengesModalStyle.css';
 
 
 const Challenges = () => {
@@ -128,8 +127,6 @@ const Challenges = () => {
   return (
     <>
       <style>{challengesStyleCSS}</style>
-      <style>{challengesModalCSS}</style>
-
       <div className="vanguard-card challenges-container">
         <div className="challenges-header">
           <span className="geist-mono section-label">MATCHMAKING HUB</span>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { axiosClient } from '../../api/axiosClient';
-import playerStyleCSS from './PlayerStyle.js';
+import './PlayerStyle.css';
 import { useParams } from 'react-router';
 
 
@@ -61,8 +61,6 @@ const Player = ({ onChallengeSuccess }) => {
 
   return (
     <>
-      <style>{playerStyleCSS}</style>
-
       <div className="vanguard-card profile-card">
         {/* Banner Superior con Rango */}
         <div className="profile-header">

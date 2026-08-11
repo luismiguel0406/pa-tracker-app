@@ -1,5 +1,4 @@
-// Estilos CSS para el Modal Táctico
-const challengesModalCSS = `
+
   .modal-overlay {
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -120,6 +119,3 @@ const challengesModalCSS = `
   .text-gold {
     color: #f2ca50;
   }
-`;
-
-export default challengesModalCSS;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router';
 import { axiosClient } from '../../api/axiosClient';
-import playersListCSS from './PlayersListStyle.js';
+import './PlayersListStyle.css';
 
 const PlayersList = () => {
   const [players, setPlayers] = useState([]);
@@ -44,8 +44,6 @@ const PlayersList = () => {
 
   return (
     <>
-      <style>{playersListCSS}</style>
-
       <div className="vanguard-card directory-container">
         {/* Header con Buscador */}
         <div className="directory-header">

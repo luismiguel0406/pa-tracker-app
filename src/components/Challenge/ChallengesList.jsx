@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router';
 import { axiosClient } from '../../api/axiosClient';
-import challengesListCSS from './ChallengesListStyle.js';
-import challengesModalCSS from './ChallengesModalStyle.js';
+import './ChallengesListStyle.css';
+import './ChallengesModalStyle.css';
 
 const ChallengesList = () => {
   const [challenges, setChallenges] = useState([]);
@@ -138,7 +138,6 @@ const ChallengesList = () => {
 
   return (
     <>
-      <style>{challengesListCSS}</style>
       <style>{challengesModalCSS}</style>
 
       <div className="vanguard-container">
