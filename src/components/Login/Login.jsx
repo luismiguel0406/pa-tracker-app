@@ -30,7 +30,7 @@ const Login = () => {
       localStorage.setItem("player_data", JSON.stringify(response.data.player))
       
       // Redirigir a los retos o dashboard
-      navigate('/players');
+      navigate('/');
     } catch (err) {
       setError('Credenciales inválidas. Verifica tu usuario y contraseña.');
     } finally {
