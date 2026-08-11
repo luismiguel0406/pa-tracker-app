@@ -45,7 +45,7 @@ const Login = () => {
           <div className="login-header">
             <span className="geist-mono text-gold">INICIA SESION</span>
             <div>
-              <img src="/src/assets/logo.png" alt="logo academy" className="login-logo" width="100" />
+              <img src="/logo.png" alt="logo academy" className="login-logo" width="100" />
             </div>
           </div>
 
