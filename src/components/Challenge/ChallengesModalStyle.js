@@ -1,0 +1,125 @@
+// Estilos CSS para el Modal Táctico
+const challengesModalCSS = `
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(17, 14, 7, 0.88);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    padding: 16px;
+  }
+
+  .modal-card {
+    background-color: #1f1b13;
+    border: 1px solid #38342b;
+    border-top: 3px solid #f2ca50;
+    width: 100%;
+    max-width: 440px;
+    padding: 24px;
+  }
+
+  .modal-header h3 {
+    font-family: 'Anybody', sans-serif;
+    font-style: italic;
+    color: #eae1d4;
+    margin: 4px 0 16px 0;
+  }
+
+  .subtext {
+    font-size: 11px;
+    color: #99907c;
+    margin-bottom: 20px;
+  }
+
+  .score-inputs-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #110e07;
+    padding: 20px;
+    border: 1px solid #38342b;
+    margin-bottom: 16px;
+  }
+
+  .score-input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .score-player-name {
+    font-size: 11px;
+    color: #eae1d4;
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .score-field {
+    width: 64px;
+    height: 56px;
+    background-color: #1f1b13;
+    border: 1px solid #4d4635;
+    color: #f2ca50;
+    font-family: 'Anybody', sans-serif;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .score-field:focus {
+    outline: none;
+    border-color: #f2ca50;
+  }
+
+  .score-divider {
+    font-size: 24px;
+    color: #4d4635;
+    font-weight: bold;
+  }
+
+  .winner-preview-box {
+    text-align: center;
+    padding: 10px;
+    font-size: 11px;
+    background-color: #16130d;
+    border: 1px dashed #38342b;
+    margin-bottom: 20px;
+  }
+
+  .text-muted {
+    color: #666053;
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    border: 1px solid #4d4635;
+    color: #99907c;
+    padding: 10px 16px;
+    font-family: 'Geist', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    cursor: pointer;
+  }
+
+  .btn-secondary:hover {
+    color: #eae1d4;
+    border-color: #eae1d4;
+  }
+
+  .text-gold {
+    color: #f2ca50;
+  }
+`;
+
+export default challengesModalCSS;

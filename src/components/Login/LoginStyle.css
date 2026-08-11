@@ -1,0 +1,94 @@
+
+  .login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+  }
+
+  .login-card {
+    background-color: #1f1b13;
+    border: 1px solid #38342b;
+    border-top: 3px solid #f2ca50;
+    padding: 32px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .login-header h2 {
+    font-family: 'Anybody', sans-serif;
+    font-style: italic;
+    color: #eae1d4;
+    margin: 4px 0 24px 0;
+  }
+
+  .text-gold {
+    color: #f2ca50;
+    font-size: 11px;
+  }
+
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .form-group label {
+    font-size: 10px;
+    color: #99907c;
+  }
+
+  .input-field {
+    background-color: #110e07;
+    border: 1px solid #4d4635;
+    color: #eae1d4;
+    padding: 10px 12px;
+    font-family: 'Geist', sans-serif;
+    outline: none;
+  }
+
+  .input-field:focus {
+    border-color: #f2ca50;
+  }
+
+  .btn-submit {
+    background-color: #f2ca50;
+    color: #110e07;
+    border: none;
+    padding: 12px;
+    font-family: 'Geist', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 8px;
+    text-transform: uppercase;
+  }
+
+  .btn-submit:hover {
+    background-color: #e5b830;
+  }
+
+  .error-banner {
+    background-color: #2c0e0e;
+    border: 1px solid #ff3b30;
+    color: #ff3b30;
+    padding: 8px 12px;
+    font-size: 11px;
+    margin-bottom: 16px;
+  }
+
+  .loading-fallback {
+    color: #f2ca50;
+    font-family: 'Geist', monospace;
+    padding: 32px;
+    text-align: center;
+  }
+
+  .geist-mono {
+    font-family: 'Geist', monospace;
+  }

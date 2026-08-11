@@ -1,0 +1,234 @@
+const challengesStyleCSS = `
+  .challenges-container {
+    border-top: 3px solid #f2ca50 !important;
+    max-width: 800px;
+    margin: 0 auto 24px auto;
+  }
+
+  .challenges-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #38342b;
+    padding-bottom: 12px;
+  }
+
+  .challenges-title {
+    font-family: 'Anybody', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    color: #eae1d4;
+    margin: 4px 0 0 0;
+    text-transform: uppercase;
+  }
+
+  .empty-state {
+    background-color: #110e07;
+    border: 1px dashed #4d4635;
+    padding: 32px 16px;
+    text-align: center;
+    color: #99907c;
+    font-size: 13px;
+  }
+
+  .challenges-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .challenge-card {
+    background-color: #1f1b13;
+    border: 1px solid #4d4635;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .challenge-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .challenge-id {
+    font-size: 11px;
+    color: #99907c;
+  }
+
+  /* Status Chips según el Design System */
+  .status-pending {
+    background-color: #93000a; /* Red Status */
+    color: #ffdad6;
+  }
+
+  .status-accepted {
+    background-color: #3B82F6; /* Blue Status */
+    color: #ffffff;
+  }
+
+  .status-rejected {
+    background-color: #9CA3AF; /* Gray Status */
+    color: #ffffff; 
+  }
+
+   .status-finished {
+    background-color: #10B981; /* Green Status */
+    color: #ffffff;
+  }  
+   .status-canceled {
+    background-color: #F59E0B; /* Amber Status */
+    color: #ffffff;
+  } 
+    
+  /* Display Versus Match */
+  .versus-box {
+    background-color: #110e07;
+    border: 1px solid #2d2a21;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .player-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .role-label {
+    font-family: 'Geist', monospace;
+    font-size: 10px;
+    color: #99907c;
+  }
+
+  .player-id-text {
+    font-family: 'Anybody', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: italic;
+    color: #eae1d4;
+  }
+
+  .player-id-text.highlight {
+    color: #f2ca50;
+  }
+
+  .vs-badge {
+    font-family: 'Anybody', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: italic;
+    color: #f2ca50;
+  }
+
+  .match-details {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 12px;
+    background-color: #16130b;
+    padding: 10px 12px;
+    border-left: 2px solid #f2ca50;
+  }
+
+  @media (min-width: 480px) {
+    .match-details {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .detail-label {
+    color: #99907c;
+  }
+
+  .detail-value {
+    color: #f2ca50;
+    font-weight: 600;
+  }
+
+  /* Botones y Acciones */
+  .action-row {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  @media (min-width: 480px) {
+    .action-row {
+      flex-direction: row;
+    }
+  }
+
+  .flex-1 {
+    flex: 1;
+  }
+
+  .btn-danger {
+    background-color: #93000a;
+    color: #ffdad6;
+    border: none;
+    font-family: 'Geist', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 12px 16px;
+    cursor: pointer;
+    border-radius: 0px;
+    text-align: center;
+  }
+
+  .queue-notice {
+    font-family: 'Geist', monospace;
+    font-size: 11px;
+    color: #99907c;
+    background-color: #110e07;
+    padding: 10px;
+    border: 1px solid #2d2a21;
+    text-align: center;
+    width: 100%;
+  }
+
+  .geist-mono {
+    font-family: 'Geist', monospace;
+  }
+    
+  .score-center-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .score-badge {
+    background-color: #f2ca50;
+    color: #110e07;
+    font-family: 'Anybody', sans-serif;
+    font-weight: 800;
+    padding: 6px 14px;
+    font-size: 18px;
+    border-radius: 2px;
+    letter-spacing: 2px;
+  }
+
+  .winner-highlight {
+    background-color: rgba(242, 202, 80, 0.08);
+    border: 1px solid #f2ca50 !important;
+    padding: 8px;
+    position: relative;
+  }
+
+  .winner-crown {
+    display: block;
+    font-family: 'Geist', monospace;
+    font-size: 9px;
+    color: #f2ca50;
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+`;
+
+export default challengesStyleCSS;

@@ -1,0 +1,134 @@
+/* Navbar */
+  .vanguard-nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 12px 16px;
+  }
+
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+  }
+
+  .logo-accent {
+    color: #f2ca50;
+    font-family: 'Geist', monospace;
+    font-weight: 700;
+  }
+
+  .logo-text {
+    font-family: 'Anybody', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 16px;
+    color: #eae1d4;
+    letter-spacing: -0.02em;
+  }
+
+  .logo-badge {
+    background-color: #f2ca50;
+    color: #110e07;
+    font-family: 'Geist', monospace;
+    font-weight: 800;
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+
+  /* Menu Links */
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-family: 'Geist', monospace;
+    font-size: 12px;
+    font-weight: 600;
+    color: #99907c;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+
+  .nav-link:hover, .nav-link.active {
+    color: #f2ca50;
+  }
+
+  .btn-logout {
+    background: transparent;
+    color: #ff3b30;
+    border: 1px solid #ff3b30;
+    font-family: 'Geist', sans-serif;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  .btn-logout:hover {
+    background-color: #ff3b30;
+    color: #ffffff;
+  }
+
+  .btn-login-accent {
+    background-color: #f2ca50;
+    color: #110e07;
+    font-family: 'Geist', sans-serif;
+    font-weight: 800;
+    font-size: 11px;
+    padding: 6px 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  /* Toggle Mobile */
+  .mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #f2ca50;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  /* Responsivo para Pantallas Pequeñas */
+  @media (max-width: 768px) {
+    .mobile-toggle {
+      display: block;
+    }
+
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: #110e07;
+      border-bottom: 2px solid #f2ca50;
+      flex-direction: column;
+      padding: 20px;
+      gap: 16px;
+      align-items: stretch;
+      text-align: center;
+    }
+
+    .nav-menu.open {
+      display: flex;
+    }
+
+    .nav-link {
+      padding: 10px 0;
+      border-bottom: 1px solid #1f1b13;
+    }
+  }
