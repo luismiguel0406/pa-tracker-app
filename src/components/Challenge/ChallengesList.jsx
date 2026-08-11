@@ -138,8 +138,6 @@ const ChallengesList = () => {
 
   return (
     <>
-      <style>{challengesModalCSS}</style>
-
       <div className="vanguard-container">
 
         {/* Banner Superior & Métricas */}

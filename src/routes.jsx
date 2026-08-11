@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
                 Component: Leaderboard
             },
             {
-                path: "Login",
+                path: "login",
                 Component: Login
             },
             {

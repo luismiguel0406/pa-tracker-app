@@ -126,7 +126,6 @@ const Challenges = () => {
 
   return (
     <>
-      <style>{challengesStyleCSS}</style>
       <div className="vanguard-card challenges-container">
         <div className="challenges-header">
           <span className="geist-mono section-label">MATCHMAKING HUB</span>
