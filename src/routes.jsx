@@ -14,7 +14,7 @@ const Leaderboard = lazy(()=> import("./components/Leaderboard/Leaderboard.jsx")
 const ProtectedRoute = ({ Component }) => {
     const token = localStorage.getItem('pacademy_token');
     if (!token) {
-        return <Navigate to="/login" replace />
+        return <Navigate to="login" replace />
     }
     return <Component />;
 };
